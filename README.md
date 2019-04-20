@@ -14,11 +14,11 @@
 - 呈現統計資料欄位
 
     - Ticket - Ticket 數量總和
-    - AvgResponseMinutes - 平均回應時間(分鐘), 取到整數再依符合條件轉換成以下格式
+    - AvgResponseMinutes - 平均回應時間(分鐘), 取到整數，轉成下列格式(符合其中一種)
     
-        - Day - 天，取最小整數 ex: 25 hr -> 1 day 
+        - Day - 天，取最小天數 ex: 1440 min -> 1 day , 3000 min -> 2 day
         - Hour - 小時，需要包含小數點 ex: 90 min = 1.5 hr
-        - Minute - 分鐘
+        - Minute - ex: 30 min -> 30 min
 
 - UI 樣式不拘，可以自己設計
     
