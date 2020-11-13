@@ -1,5 +1,6 @@
 ﻿@{
     ViewBag.Title = "Home Page";
+   
 }
 
 <div class="jumbotron">
@@ -9,6 +10,54 @@
 </div>
 
 <div class="row">
+
+    @*Ticket - Ticket 數量總和
+
+        AvgResponseMinutes - 平均回應時間(分鐘), 取到整數，轉成下列格式(符合其中一種)
+
+        Day - 天，取最小天數 ex: 1440 min -> 1 day , 3000 min -> 2 day
+        Hour - 小時，需要包含小數點 ex: 90 min = 1.5 hr
+        Minute - ex: 30 min -> 30 min
+        UI 樣式不拘，可以自己設計*@
+
+    @model Data_Q2.ViewModels.DashboardViewModel
+
+
+    <h4>檔案名稱 (random)：@ViewBag.filename</h4>
+    <h4>Ticket 數量總和：@Model.TicketSum</h4>
+    <h4>平均回應時間：@ViewBag.avgrspstime</h4>
+
+    <table class="table table-bordered table-striped">
+        @{ var alist = Model.TicketDataList.FirstOrDefault();}
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model =>alist.Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => alist.Ticket)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => alist.ResponseMinutes)
+            </th>
+        </tr>
+
+        @foreach (var item in Model.TicketDataList)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Date)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ticket)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ResponseMinutes)
+                </td>
+            </tr>
+        }
+
+    </table>
+
     <div class="col-md-4">
         <h2>Getting started</h2>
         <p>

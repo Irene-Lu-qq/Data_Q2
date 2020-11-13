@@ -1,0 +1,52 @@
+[
+    {
+        "Date": "2019-01-01",
+        "Ticket": 1,
+        "ResponseMinutes": 10
+    },
+    {
+        "Date": "2019-01-2",
+        "Ticket": 2,
+        "ResponseMinutes": 20
+    },
+    {
+        "Date": "2019-01-3",
+        "Ticket": 3,
+        "ResponseMinutes": 30
+    },
+    {
+        "Date": "2019-01-04",
+        "Ticket": 4,
+        "ResponseMinutes": 40
+    },
+    {
+        "Date": "2019-01-05",
+        "Ticket": 5,
+        "ResponseMinutes": 50
+    },
+    {
+        "Date": "2019-01-06",
+        "Ticket": 6,
+        "ResponseMinutes": 60
+    },
+    {
+        "Date": "2019-01-07",
+        "Ticket": 7,
+        "ResponseMinutes": 70
+    },
+    {
+        "Date": "2019-01-08",
+        "Ticket": 8,
+        "ResponseMinutes": 80
+    },
+    {
+        "Date": "2019-01-09",
+        "Ticket": 9,
+        "ResponseMinutes": 90
+    },
+    {
+        "Date": "2019-01-10",
+        "Ticket": 10,
+        "ResponseMinutes": 100
+    }
+]

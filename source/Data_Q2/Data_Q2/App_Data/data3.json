@@ -1,0 +1,27 @@
+[
+    {
+        "Date": "2019-01-01",
+        "Ticket": 1,
+        "ResponseMinutes": 1000
+    },
+    {
+        "Date": "2019-01-2",
+        "Ticket": 2,
+        "ResponseMinutes": 2000
+    },
+    {
+        "Date": "2019-01-3",
+        "Ticket": 3,
+        "ResponseMinutes": 3000
+    },
+    {
+        "Date": "2019-01-04",
+        "Ticket": 4,
+        "ResponseMinutes": 4000
+    },
+    {
+        "Date": "2019-01-05",
+        "Ticket": 5,
+        "ResponseMinutes": 5000
+    }
+]
